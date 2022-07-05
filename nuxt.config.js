@@ -79,5 +79,8 @@ export default {
   target: 'static',
   router: {
     base: '/isekaid/'
+  },
+  static: {
+    prefix: false
   }
 }
