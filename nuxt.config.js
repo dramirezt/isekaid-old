@@ -74,5 +74,10 @@ export default {
         fs: 'empty'
       }
     }
+  },
+  
+  target: 'static',
+  router: {
+    base: '/<repository-name>/'
   }
 }
