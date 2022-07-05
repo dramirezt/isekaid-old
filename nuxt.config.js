@@ -78,6 +78,6 @@ export default {
   
   target: 'static',
   router: {
-    base: '/<repository-name>/'
+    base: '/isekaid/'
   }
 }
