@@ -279,7 +279,7 @@
                                             v-if="selectedSkill.skill.type == 'attack'"
                                         >
                                             <img 
-                                                src="/icons/combat/defense.png" 
+                                                src="icons/combat/defense.png" 
                                                 class="icon"
                                             >
 
@@ -533,7 +533,7 @@ export default {
             let iconPath = ''
 
             if (this.selectedSkill) {
-                iconPath = '/icons/'
+                iconPath = 'icons/'
 
                 switch(this.selectedSkill.skill.type) {
                     case "attack":

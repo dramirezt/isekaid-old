@@ -143,7 +143,7 @@ export default {
             let text = this.$t('interface.skills.' + this.skill.type)
             if (this.skill.statistic) {
                 text += ' - ' 
-                //text += '<img src="/icons/statistics/' + this.skill.statistic + '.png" class="icon" />'
+                //text += '<img src="icons/statistics/' + this.skill.statistic + '.png" class="icon" />'
                 text += this.$t('statistics.' + this.skill.statistic)
             }
             return text

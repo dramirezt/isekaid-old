@@ -4,7 +4,7 @@
     >
         <div class="flex flex-justify-end w-50">
             <img 
-                :src="'/icons/' + element.icon"
+                :src="'icons/' + element.icon"
                 class="card-icon"
             >
         </div>

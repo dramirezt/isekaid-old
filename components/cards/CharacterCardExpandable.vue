@@ -84,7 +84,7 @@
                     @click="changeView(option.view, index)"
                 >
                     <img 
-                        :src="'/icons/' + option.icon"
+                        :src="'icons/' + option.icon"
                         class="button-icon"
                     >
                     <span class="text-uppercase text-outline">

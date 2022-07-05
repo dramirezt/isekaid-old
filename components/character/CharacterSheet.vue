@@ -180,7 +180,7 @@
                                 class="flex flex-align-center flex-space-between w-100 panel"
                             >
                                 <div class="flex flex-align-center name">
-                                    <img :src="'/icons/statistics/' + statistic + '.png'" class="icon">
+                                    <img :src="'icons/statistics/' + statistic + '.png'" class="icon">
                                     <span>
                                         {{ $t('statistics.' + statistic) }}
                                     </span>
@@ -207,7 +207,7 @@
                             <div class="flex flex-align-center flex-space-between panel panel-doubleline">
                                 <div class="flex flex-align-center name">
                                     <img 
-                                        :src="'/icons/combat/health.png'" 
+                                        :src="'icons/combat/health.png'" 
                                         class="icon"
                                     >
                                     <span>
@@ -225,7 +225,7 @@
                                     </div>
                                     <div class="flex flex-align-center flex-justify-center combat-base-bonus">
                                         <span class="bonus">{{ getStatBonus(character, character.combat.health.statistic) }}</span>
-                                        <img src="/icons/statistics/constitution.png" class="bonus-icon">
+                                        <img src="icons/statistics/constitution.png" class="bonus-icon">
                                         <span class="bonus">
                                             + {{ character.combat.health.base }}
                                         </span>
@@ -241,7 +241,7 @@
                             <div class="flex flex-align-center flex-space-between panel panel-doubleline">
                                 <div class="flex flex-align-center name">
                                     <img 
-                                        :src="'/icons/combat/mana.png'" 
+                                        :src="'icons/combat/mana.png'" 
                                         class="icon"
                                     >
                                     <span>
@@ -259,7 +259,7 @@
                                     </div>
                                     <div class="flex flex-align-center flex-justify-center combat-base-bonus">
                                         <span class="bonus">{{ getStatBonus(character, character.combat.mana.statistic) }}</span>
-                                        <img src="/icons/statistics/mana.png" class="bonus-icon">
+                                        <img src="icons/statistics/mana.png" class="bonus-icon">
                                         <span class="bonus">
                                             + {{ character.combat.mana.base }}
                                         </span>
@@ -275,7 +275,7 @@
                             <div class="flex flex-align-center flex-space-between panel panel-doubleline ">
                                 <div class="flex flex-align-center name">
                                     <img 
-                                        :src="'/icons/combat/defense.png'" 
+                                        :src="'icons/combat/defense.png'" 
                                         class="icon"
                                     >
                                     <span>
@@ -293,7 +293,7 @@
                                     </div>
                                     <div class="flex flex-align-center flex-justify-center combat-base-bonus">
                                         <span class="bonus">{{ getStatBonus(character, character.combat.defense.statistic) }}</span>
-                                        <img :src="'/icons/statistics/' + character.combat.defense.statistic + '.png'" class="bonus-icon">
+                                        <img :src="'icons/statistics/' + character.combat.defense.statistic + '.png'" class="bonus-icon">
                                         <span class="bonus">+ 10</span>
                                     </div>
                                     <div class="flex flex-align-center total">
@@ -307,7 +307,7 @@
                             <div class="flex flex-align-center flex-space-between panel panel-doubleline">
                                 <div class="flex flex-align-center name">
                                     <img 
-                                        :src="'/icons/combat/speed.png'" 
+                                        :src="'icons/combat/speed.png'" 
                                         class="icon"
                                     >
                                     <span>
@@ -337,7 +337,7 @@
                             <div class="flex flex-align-center flex-space-between panel panel-doubleline">
                                 <div class="flex flex-align-center name">
                                     <img 
-                                        :src="'/icons/combat/initiative.png'" 
+                                        :src="'icons/combat/initiative.png'" 
                                         class="icon"
                                     >
                                     <span>
@@ -355,7 +355,7 @@
                                     </div>
                                     <div class="flex flex-align-center flex-justify-center combat-base-bonus">
                                         <span class="bonus">{{ getStatBonus(character, character.combat.initiative.statistic) }}</span>
-                                        <img :src="'/icons/statistics/' + character.combat.initiative.statistic + '.png'" class="bonus-icon">
+                                        <img :src="'icons/statistics/' + character.combat.initiative.statistic + '.png'" class="bonus-icon">
                                     </div>
                                     <div class="flex flex-align-center total">
                                         <span class="bonus">
@@ -385,7 +385,7 @@
                             >
                                 <div class="flex flex-align-center name">
                                     <img 
-                                        :src="'/icons/damage_types/' + key + '.png'" 
+                                        :src="'icons/damage_types/' + key + '.png'" 
                                         class="icon"
                                     >
                                     <span>
@@ -403,7 +403,7 @@
                                     </div>
                                     <div class="flex flex-align-center flex-justify-center base-bonus">
                                         <span class="bonus">{{ getResistanceStatBonus(res.statistic) }}</span>
-                                        <img :src="'/icons/statistics/' + res.statistic + '.png'" class="bonus-icon">
+                                        <img :src="'icons/statistics/' + res.statistic + '.png'" class="bonus-icon">
                                     </div>
                                     <div class="flex flex-align-center total">
                                         <span class="bonus">
@@ -429,7 +429,7 @@
                             >
                                 <div class="flex flex-align-center name">
                                     <img 
-                                        :src="'/icons/damage_types/' + key + '.png'" 
+                                        :src="'icons/damage_types/' + key + '.png'" 
                                         class="icon"
                                     >
                                     <span>
@@ -447,7 +447,7 @@
                                     </div>
                                     <div class="flex flex-align-center flex-justify-center base-bonus">
                                         <span class="bonus">{{ getResistanceStatBonus(res.statistic) }}</span>
-                                        <img :src="'/icons/statistics/' + res.statistic + '.png'" class="bonus-icon">
+                                        <img :src="'icons/statistics/' + res.statistic + '.png'" class="bonus-icon">
                                     </div>
                                     <div class="flex flex-align-center total">
                                         <span class="bonus">

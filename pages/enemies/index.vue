@@ -36,7 +36,7 @@
                                 >
                                     {{ $t('interface.type') }}:
                                     <img 
-                                        :src="'/icons/enemies/' + filterType + '.png'"
+                                        :src="'icons/enemies/' + filterType + '.png'"
                                         class="icon"
                                         v-if="filterType"
                                     >
@@ -62,7 +62,7 @@
                                         @click="setFilter(type)"
                                     >
                                         <img 
-                                            :src="'/icons/enemies/' + type + '.png'"
+                                            :src="'icons/enemies/' + type + '.png'"
                                             class="icon"
                                         >
                                         {{ $t('enemies.' + type )}}

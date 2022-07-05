@@ -60,7 +60,7 @@ export default {
     computed: {
         ...mapGetters(['getCharacterClass']),
         characterImage () {
-            let src = '/icons/'
+            let src = 'icons/'
 
             if (this.character.type == "character") {
                 src += 'classes/' + this.character.class

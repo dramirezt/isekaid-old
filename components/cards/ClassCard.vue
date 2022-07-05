@@ -8,7 +8,7 @@
     >
         <div class="flex flex-column flex-align-center text-center class-portrait">
             <img 
-                :src="'/icons/classes/' + characterClass + '.png'"
+                :src="'icons/classes/' + characterClass + '.png'"
                 class="class-image"
             >
 
