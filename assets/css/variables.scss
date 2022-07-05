@@ -1,0 +1,201 @@
+$explorer: #627c4a;
+$explorer-light: #83a070;
+$mage: #964c4c;
+$mage-light: #ba7473;
+$priest: #6983ca;
+$priest-light: #8fa1bb;
+$rogue: #3d3d4f;
+$rogue-light: #7a7aae;
+$sorcerer: #d97a51 ;
+$sorcerer-light: #fb8650;
+$swordman: #a73965;
+$swordman-light: #f470a6;
+$warrior: #8f3c62;
+$warrior-light: #cf5284;
+
+$health-color: #FE5B61;
+$mana-color: #227de3;
+$shield-color: #b2d0f3;
+
+$background-color: #090909;
+$black-light: #212327;
+$black-dark: #191919;
+$text-color: #ffffff;
+$white: #ffffff;
+
+$enemy-regular: #b33c3c;
+$enemy-boss: #412057;
+
+$red: #d94e47;
+$green: #6baa41;
+  
+.bg-explorer {
+    background-color: $explorer !important;
+}
+
+.border-explorer {
+    border-color: $explorer !important;
+}
+
+.bg-mage {
+    background-color: $mage !important;
+}
+
+.border-mage {
+    border-color: $mage !important;
+}
+
+.bg-priest {
+    background-color: $priest !important;
+}
+
+.border-priest {
+    border-color: $priest !important;
+}
+
+.bg-rogue {
+    background-color: $rogue !important;
+}
+
+.border-rogue {
+    border-color: $rogue !important;
+}
+
+.bg-sorcerer {
+    background-color: $sorcerer !important;
+}
+
+.border-sorcerer {
+    border-color: $sorcerer !important;
+}
+
+.bg-swordman {
+    background-color: $swordman !important;
+}
+
+.border-swordman {
+    border-color: $swordman !important;
+}
+
+.bg-warrior {
+    background-color: $warrior !important;
+}
+
+.border-warrior {
+    border-color: $warrior !important;
+}
+
+.btn-explorer {
+    border-color: $explorer !important;
+    background-color: rgba($explorer, 0.3) !important;
+    color: $white !important;
+
+    &:hover,
+    &.active {
+        background-color: $explorer !important;
+    }
+}
+
+.btn-mage {
+    border-color: $mage !important;
+    background-color: rgba($mage, 0.3) !important;
+    color: $white !important;
+
+    &:hover,
+    &.active {
+        background-color: $mage !important;
+    }
+}
+
+.btn-priest {
+    border-color: $priest !important;
+    background-color: rgba($priest, 0.3) !important;
+    color: $white !important;
+
+    &:hover,
+    &.active {
+        background-color: $priest !important;
+    }
+}
+
+.btn-rogue {
+    border-color: $rogue !important;
+    background-color: rgba($rogue, 0.3) !important;
+    color: $white !important;
+
+    &:hover,
+    &.active {
+        background-color: $rogue !important;
+    }
+}
+
+.btn-sorcerer {
+    border-color: $sorcerer !important;
+    background-color: rgba($sorcerer, 0.3) !important;
+    color: $white !important;
+
+    &:hover,
+    &.active {
+        background-color: $sorcerer !important;
+    }
+}
+
+.btn-swordman {
+    border-color: $swordman !important;
+    background-color: rgba($swordman, 0.3) !important;
+    color: $white !important;
+
+    &:hover,
+    &.active {
+        background-color: $swordman !important;
+    }
+}
+
+.btn-warrior {
+    border-color: $warrior !important;
+    background-color: rgba($warrior, 0.3) !important;
+    color: $white !important;
+
+    &:hover,
+    &.active {
+        background-color: $warrior !important;
+    }
+}
+
+.btn-enemy-regular {
+    border-color: $enemy-regular !important;
+    background-color: rgba($enemy-regular, 0.3) !important;
+    color: $white !important;
+
+    &:hover,
+    &.active {
+        background-color: $enemy-regular !important;
+    }
+}
+
+.btn-enemy-boss {
+    border-color: $enemy-boss !important;
+    background-color: rgba($enemy-boss, 0.3) !important;
+    color: $white !important;
+
+    &:hover,
+    &.active {
+        background-color: $enemy-boss !important;
+    }
+}
+
+.bg-enemy-regular {
+    background-color: $enemy-regular !important;
+}
+
+.border-enemy-regular {
+    border-color: $enemy-regular !important;
+}
+
+.bg-enemy-boss {
+    background-color: $enemy-boss !important;
+}
+
+.border-enemy-boss {
+    border-color: $enemy-boss !important;
+}

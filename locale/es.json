@@ -1,0 +1,269 @@
+{
+    "interface": {
+        "back": "Volver",
+        "next": "Siguiente",
+        "finish": "Terminar",
+        "save": "Guardar",
+        "save_and_exit": "Guardar y salir",
+        "select_all": "Seleccionar todos",
+        "unselect_all": "Eliminar selección", 
+        "close": "Cerrar",
+        "search": "Buscar",
+        "filter_by": "Filtrar por",
+        "any": "Cualquiera",
+        "type": "Tipo",
+        "roll": "Tirada",
+        "skip": "Saltar",
+        "apply": "Aplicar",
+        "delete": "Eliminar",
+        "combat": {
+            "back_to_character_selection": "Elegir personajes",
+            "start_combat": "Empezar combate",
+            "select_characters": "Selección de personajes",
+            "initiative_rolls": "Tiradas de iniciativa",
+            "update_status": "Actualizar estado"
+        },
+        "characters": {
+            "characters": "Personajes",
+            "character_list": "Lista de personajes",
+            "create_character": "Crear personaje",
+            "new_character": "Nuevo personaje",
+            "add_skill": "Añadir habilidad",
+            "sheet": "Ficha"
+        },
+        "create_characters": {
+            "enter_your_name": "Introduce tu nombre",
+            "select_class": "Selecciona una clase"
+        },
+        "enemies": {
+            "enemies": "Enemigos",
+            "bosses": "Jefes",
+            "enemies_list": "Lista de enemigos",
+            "bosses_list": "Lista de jefes"
+        },
+        "skills": {
+            "skills": "Habilidades",
+            "level": "Nivel",
+            "targets": "Objetivos",
+            "range": "Rango",
+            "mana_cost": "Coste Maná",
+            "damage": "Daño",
+            "heal": "Curación",
+            "shield": "Escudo",
+            "attack": "Ataque",
+            "action": "Acción",
+            "free-action": "Acción Gratuita",
+            "passive": "Pasiva",
+            "unique": "Única"
+        }
+    },
+    "classes": {
+        "apostate": "Apóstata",
+        "explorer": "Explorador",
+        "mage": "Mago",
+        "priest": "Clérigo",
+        "rogue": "Pícaro",
+        "sorcerer": "Hechicero",
+        "swordman": "Espadachín",
+        "warrior": "Guerrero"
+    },
+    "statistic": "Estadística",
+    "statistics": {
+        "name": "Estadísticas",
+        "strength": "Fuerza",
+        "dexterity": "Destreza",
+        "constitution": "Constitución",
+        "magic": "Magia",
+        "faith": "Fé",
+        "mana": "Maná"
+    },
+    "level": "Nivel",
+    "damage_reduction": "Reducción de daño",
+    "resistances": "Resistencias",
+    "physical_resistances": "Resistencias físicas",
+    "elemental_resistances": "Resistencias elementales",
+    "magical_resistances": "Resistencias mágicas",
+    "physical_res": "R. Físicas",
+    "elemental_res": "R. Elementales",
+    "magical_res": "R. Mágicas",
+    "damage_types": {
+        "bleed": "Sangrado",
+        "blunt": "Contundente",
+        "burn": "Quemadura",
+        "demonic": "Demoniaco",
+        "earth": "Tierra",
+        "fire": "Fuego",
+        "holy": "Sagrado",
+        "ice": "Hielo",
+        "lightning": "Rayo",
+        "magical": "Mágico",
+        "poison": "Veneno",
+        "pierce": "Perforante",
+        "cut": "Cortante",
+        "water": "Agua",
+        "wind": "Viento"
+    },
+    "savings": {
+        "name": "Salvaciones",
+        "fortitude": "Fortaleza",
+        "reflexes": "Reflejos",
+        "will": "Voluntad"
+    },
+    "combat": {
+        "damage": "Daño",
+        "status": "Estado",
+        "name": "Combate",
+        "defense": "Defensa",
+        "health": "Vida",
+        "health_current": "Vida actual",
+        "initiative": "Iniciativa",
+        "mana": "Maná",
+        "mana_current": "Maná actual",
+        "speed": "Velocidad",
+        "hp": "PV",
+        "hp_current": "PV actuales",
+        "mp": "PM",
+        "mp_current": "MP actuales",
+        "shield": "Escudo",
+        "select-skill": "Selecciona una habilidad",
+        "select-target": "Selecciona un objetivo",
+        "set-roll": "Aplica modificadores",
+        "view-roll-results": "Resultado",
+        "view-difference": "Antes vs después"
+    },
+    "skills": {
+        "cleave-claw": {
+            "name": "Hendir Garra",
+            "description": "<p>Si este ataque impacta, puedes seleccionar otro objetivo adyacente a ti. Ese objetivo recibe [BONUS] de daño [DAMAGE_TYPE].</p>"
+        },
+        "overwhelming-charge": {
+            "name": "Carga Arrolladora",
+            "description": "<p>Te desplazas en línea recta hasta [RANGE] casillas.</p><p>Realizas un ataque contra todo lo que se interpone en tu camino y empujas a cada objetivo 2 casillas. Esta habilidad no produce ataques de oportunidad.</p>"
+        },
+        "fear-shout": {
+            "name": "Grito Terrorífico",
+            "description": "<p>Emites un grito aterrador que aplica <b>miedo</b> a todos los enemigos a rango.</p><p>Cada enemigo realiza una salvación de Magia o Fë (CD 12 + [STATISTIC]).</p>"
+        },
+        "guardian-wrath": {
+            "name": "Ira del Guardián",
+            "description": "<p>Se activa si el <b>Cachorro del Guardián del Bosque</b> ha muerto o cuando la vida del Guardián del Bosque haya bajado a la mitad.</p><p>El Guardián del Bosque desata toda su ira, lo que le proporciona un turno inmediatamente y además le permite realizar una acción o ataque adicional por turno.</p>"
+        },
+        "poison-bite": {
+            "name": "Mordisco venenoso",
+            "description": "<p>Mordedura que puede envenenar si acierta.</p>"
+        },
+        "spiderweb": {
+            "name": "Telaraña",
+            "description": "<p>Lanzas una telaraña que inmoviliza hasta [STATISTIC] turnos.</p>"
+        },
+        "call-brood": {
+            "name": "Llamar a la prole",
+            "description": "<p>Llamas a crías de la misma especie que se unen al combate en el siguiente turno.</p>"
+        },
+        "devour-brood": {
+            "name": "Devorar a la prole",
+            "description": "<p>Cuando vaya a ser derrotada por primera vez, la Reina Araña del Bosque desaparece durante 2 turnos a las copas de los árboles.</p><p>Al volver, la Reina Araña del Bosque habrá consumido a toda su prole y recuperado la mitad de sus PV y PM pero perderá la habilidad <b>[SKILL_CALL-BROOD]</b>.</p>"
+        },
+        "melee-attack-blunt": {
+            "name": "Ataque",
+            "description": "<p>Realizas un ataque cuerpo a cuerpo de daño contundente.</p>"
+        },
+        "melee-attack-cut": {
+            "name": "Ataque",
+            "description": "<p>Realizas un ataque cuerpo a cuerpo de daño cortante.</p>"
+        },
+        "ranged-attack-pierce": {
+            "name": "Disparo",
+            "description": "<p>Realizas un ataque a distancia de daño perforante.</p>"
+        },
+        "ranged-attack-magical": {
+            "name": "Disparo mágico",
+            "description": "<p>Realizas un ataque a distancia de daño mágico.</p>"
+        },
+        "devotion":  {
+            "name": "Devoción",
+            "description": "<p>Permite manipular la energía sagrada que fluye por el mundo.</p><p>Desbloquea las habilidades:</p> [SKILLS]"
+        },
+        "draw-attention":  {
+            "name": "Llamar la Atención",
+            "description": "<p>Tu presencia te convierte en el centro de atención.</p>"
+        },
+        "elemental-projectile-air": {
+            "name": "Proyectil Elemental: Aire",
+            "description": "<p>Realizas un ataque con un proyectil de aire.</p>"
+        },
+        "elemental-projectile-earth": {
+            "name": "Proyectil Elemental: Tierra",
+            "description": "<p>Realizas un ataque con un proyectil de tierra.</p>"
+        },
+        "elemental-projectile-fire": {
+            "name": "Proyectil Elemental: Fuego",
+            "description": "<p>Realizas un ataque con un proyectil de fuego.</p>"
+        },
+        "elemental-projectile-water": {
+            "name": "Proyectil Elemental: Agua",
+            "description": "<p>Realizas un ataque con un proyectil de agua.</p>"
+        },
+        "faith-blow": {
+            "name": "Golpe de Fe",
+            "description": "<p>Atacas mientras recitas un salmo que imbuye tu golpe con energía sagrada.</p>"
+        },
+        "fast-cut": {
+            "name": "Corte Rápido",
+            "description": "<p>Después de este ataque puedes moverte hasta 2 casillas sin provocar un ataque de oportunidad.</p>"
+        },
+        "healing-touch": {
+            "name": "Toque Curativo",
+            "description": "<p>Entonas una breve oración que restaura puntos de vida.</p>"
+        },
+        "holy-shield": {
+            "name": "Escudo Sagrado",
+            "description": "<p>Manipulas la energía sagrada para crear un escudo de energía que absorbe daño.</p>"
+        },
+        "focus-shot": {
+            "name": "Disparo Concentrado",
+            "description": "<p>Apuntas durante un turno para realizar un disparo letal en el siguiente turno.</p>"
+        },
+        "elemental-affinity": {
+            "name": "Afinidad Elemental",
+            "description": "<p>Tus habilidades mágicas te permiten manipular los elementos.</p><p>Desbloquea las habilidades:</p> [SKILLS]"
+        },
+        "powerful-blow": {
+            "name": "Golpe Poderoso",
+            "description": "<p>Concentras tu energía para realizar un ataque potente.</p>"
+        },
+        "robustness": {
+            "name": "Robustez",
+            "description": "<p>Tus habilidades físicas aumentan considerablemente.</p><p>Desbloquea las habilidades:</p> [SKILLS]"
+        },
+        "sense-danger": {
+            "name": "Sentir Peligro",
+            "description": ""
+        },
+        "shield-blow": {
+            "name": "Golpe de Escudo",
+            "description": "<p>Golpeas con tu escudo, si impacta, este ataque puede aturdir.</p>"
+        },
+        "sixth-sense": {
+            "name": "Sexto Sentido",
+            "description": "<p>Tus sentidos aumentan lo que te permite percibir tu entorno con mayor precisión.</p><p>Desbloquea las habilidades:</p> [SKILLS]"
+        }
+    },
+    "enemies": {
+        "enemy-boss": "Jefe",
+        "enemy-regular": "Enemigo",
+        "forest-spider-brood": "Cría de Araña del Bosque",
+        "forest-giant-spider": "Araña Gigante del Bosque",
+        "forest-spider-queen": "Reina Araña del Bosque",
+        "forest-guardian": "Guardián del Bosque",
+        "forest-guardian-cub": "Cachorro del Guardián del Bosque",
+        "forest-bandit": "Bandido del Bosque",
+        "forest-patches": "William 'Parches' del Bosque"
+    },
+    "rolls": {
+        "success": "Éxito",
+        "critical-success": "Crítico",
+        "critical-fail": "Pifia",
+        "fail": "Fallo"
+    }
+}

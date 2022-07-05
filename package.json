@@ -1,0 +1,26 @@
+{
+  "name": "isekai-front",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "HOST=192.168.10.10 PORT=8000 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.2.1",
+    "core-js": "^3.19.3",
+    "nuxt": "^2.15.8",
+    "sass": "^1.49.9",
+    "sass-loader": "10",
+    "swiper": "5.4.5",
+    "vue": "^2.6.14",
+    "vue-awesome-swiper": "4.1.1",
+    "vue-inline-svg": "^2.1.0",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
+  }
+}
