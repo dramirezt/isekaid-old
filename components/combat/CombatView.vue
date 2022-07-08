@@ -5,6 +5,7 @@
                 :initiativeRolls="initiativeRolls"
                 :currentInitiative="currentInitiative"
                 @updateInitiative="setCurrentInitiative($event)"
+                @updateOrder="initiativeOrder = $event"
             />
             
             <div class="flex flex-align-start flex-justify-center w-100 container combat-panel">
@@ -57,7 +58,7 @@
                                     ref="swiper"
                                 >
                                     <swiper-slide
-                                        v-for="(roll, index) in initiativeRolls"
+                                        v-for="(roll, index) in initiativeOrder"
                                         :key="'objective-' + index"
                                         class="w-100"
                                     >
@@ -434,7 +435,7 @@
                 ref="swiper"
             >
                 <swiper-slide
-                    v-for="(roll, index) in initiativeRolls"
+                    v-for="(roll, index) in initiativeOrder"
                     :key="'objective-' + index"
                     class="w-100"
                 >
@@ -468,6 +469,7 @@ export default {
     },
     data () {
         return {
+            initiativeOrder: [],
             currentInitiative: 0,
             swiperOptions: {
                 slidesPerView: 'auto',
@@ -498,7 +500,7 @@ export default {
     computed: {
         ...mapGetters(['getCharacterClass', 'getCharacterDefense', 'getSkill', 'getStatBonus', 'getResistanceByType', 'getCharacterTotalHealth']),
         currentCharacter () {
-            return this.initiativeRolls[this.currentInitiative] ? this.initiativeRolls[this.currentInitiative].character : null
+            return this.initiativeOrder[this.currentInitiative] ? this.initiativeOrder[this.currentInitiative].character : null
         },
         currentCharacterName () {
             let name = ''

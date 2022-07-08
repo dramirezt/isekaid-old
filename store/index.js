@@ -8,9 +8,9 @@ export const state = () => ({
             type: "character",
             combat: {
                 defense: { statistic: "dexterity", bonus: 0 },
-                health: { base: 4, current: 3, statistic: "constitution", bonus: 0 },
+                health: { base: 4, current: 5, statistic: "constitution", bonus: 0 },
                 initiative: { statistic: "dexterity", bonus: 2 },
-                mana: { base: 4, current: 3, statistic: "mana", bonus: 0 },
+                mana: { base: 4, current: 5, statistic: "mana", bonus: 0 },
                 speed: { base: 4, bonus: 0 },
                 shield: 0
             },
@@ -48,16 +48,17 @@ export const state = () => ({
                 { skill: "sixth-sense", level: 1 },
                 { skill: "sense-danger", level: 1 },
                 { skill: "focus-shot", level: 1 },
-                { skill: "fast-cut", level: 1 }
+                { skill: "fast-cut", level: 1 },
+                { skill: "first-aid", level: 1}
             ]
         },
         mage: { 
             type: "character",
             combat: {
                 defense: { statistic: "dexterity", bonus: 0 },
-                health: { base: 4, current: 3, statistic: "constitution", bonus: 0 },
+                health: { base: 4, current: 4, statistic: "constitution", bonus: 0 },
                 initiative: { statistic: "dexterity", bonus: 2 },
-                mana: { base: 4, current: 3, statistic: "mana", bonus: 0 },
+                mana: { base: 4, current: 7, statistic: "mana", bonus: 0 },
                 speed: { base: 4, bonus: 0 },
                 shield: 0
             },
@@ -90,21 +91,22 @@ export const state = () => ({
                 mana: 3
             },
             skills: [
-                { skill: "melee-attack-magic" },
+                { skill: "ranged-attack-magical" },
                 { skill: "elemental-affinity", level: 1 },
                 { skill: "elemental-projectile-earth", level: 1 },
                 { skill: "elemental-projectile-fire", level: 1 },
                 { skill: "elemental-projectile-water", level: 1 },
-                { skill: "elemental-projectile-air", level: 1 }
+                { skill: "elemental-projectile-air", level: 1 },
+                { skill: "mana-regeneration", level: 1 }
             ]
         },
         priest: {
             type: "character",
             combat: {
                 defense: { statistic: "dexterity", bonus: 0 },
-                health: { base: 4, current: 3, statistic: "constitution", bonus: 0 },
+                health: { base: 4, current: 5, statistic: "constitution", bonus: 0 },
                 initiative: { statistic: "dexterity", bonus: 2 },
-                mana: { base: 4, current: 3, statistic: "mana", bonus: 0 },
+                mana: { base: 4, current: 6, statistic: "mana", bonus: 0 },
                 speed: { base: 4, bonus: 0 },
                 shield: 0
             },
@@ -141,16 +143,17 @@ export const state = () => ({
                 { skill: "devotion", level: 1 },
                 { skill: "holy-shield", level: 1 },
                 { skill: "faith-blow", level: 1 },
-                { skill: "healing-touch", level: 1 }
+                { skill: "healing-touch", level: 1 },
+                { skill: "divine-intervention", level: 1 }
             ]
         },
         warrior: { 
             type: "character",
             combat: {
                 defense: { statistic: "dexterity", bonus: 0 },
-                health: { base: 4, current: 3, statistic: "constitution", bonus: 0 },
+                health: { base: 4, current: 6, statistic: "constitution", bonus: 0 },
                 initiative: { statistic: "dexterity", bonus: 2 },
-                mana: { base: 4, current: 3, statistic: "mana", bonus: 0 },
+                mana: { base: 4, current: 5, statistic: "mana", bonus: 0 },
                 speed: { base: 4, bonus: 0 },
                 shield: 0
             },
@@ -188,6 +191,7 @@ export const state = () => ({
                 { skill: "draw-attention", level: 1 },
                 { skill: "powerful-blow", level: 1 },
                 { skill: "shield-blow", level: 1 },
+                { skill: "second-chance", level: 1 }
             ]
         }
     },
@@ -202,7 +206,7 @@ export const state = () => ({
                 defense: { statistic: "dexterity", bonus: 0 },
                 health: { base: 4, current: 5, statistic: "constitution", bonus: 0 },
                 initiative: { statistic: "dexterity", bonus: 1 },
-                mana: { base: 4, current: 4, statistic: "mana", bonus: 0 },
+                mana: { base: 4, current: 5, statistic: "mana", bonus: 0 },
                 speed: { base: 4, bonus: 0 },
                 shield: 0
             },
@@ -512,35 +516,43 @@ export const state = () => ({
             ]
         }
     ],
-    /*statistics: [
-        "strength",
-        "dexterity",
-        "constitution",
-        "magic",
-        "faith",
-        "mana"
-    ],
-    damageTypes: [
-        { name: "bleed", type: "physical" },
-        { name: "blunt", type: "physical" },
-        { name: "poison", type: "physical" },
-        { name: "pierce", type: "physical" },
-        { name: "cut", type: "physical" },
-        { name: "earth", type: "magical" },
-        { name: "fire", type: "magical" },
-        { name: "ice", type: "magical" },
-        { name: "lightning", type: "magical" },
-        { name: "water", type: "magical" },
-        { name: "wind", type: "magical" },
-        { name: "demonic", type: "magical" },
-        { name: "magical", type: "magical" },
-        { name: "holy", type: "magical" }
-    ],*/
     damageTypes: {
         physical: ["bleed", "blunt", "cut", "pierce", "poison"],
         magical: ["earth", "fire", "ice", "lightning", "water", "wind", "demonic", "magical", "holy"]
     },
     skills: [
+        {
+            name: "mana-regeneration",
+            type: "passive",
+            levels: {
+                level_2: {},
+                level_3: {}
+            }
+        },
+        {
+            name: "second-chance",
+            type: "passive",
+            levels: {
+                level_2: {},
+                level_3: {}
+            }
+        },
+        {
+            name: "sense-danger",
+            type: "passive",
+            levels: {
+                level_2: {},
+                level_3: {}
+            }
+        },
+        {
+            name: "divine-intervention",
+            type: "passive",
+            levels: {
+                level_2: {},
+                level_3: {}
+            }
+        },
         { 
             name: "fear-shout",
             statistic: "magic",
@@ -665,18 +677,24 @@ export const state = () => ({
             name: "sixth-sense",
             type: "passive",
             levels: {
-                level_1: { skills: ["sense-danger", "focus-shot", "fast-cut"] },
+                level_1: { skills: ["first-aid", "focus-shot", "fast-cut"] },
                 level_2: { statistics: { statistic: "dexterity|strength", value: 1 }},
                 level_3: { statistics: { statistic: "magic|mana", value: 1 }}
             }
         },
         {
-            name: "sense-danger",
-            type: "action",
+            name: "first-aid",
+            statistic: "faith",
+            type: "heal",
+            heal: 1,
+            mana: 2,
+            range: 1,
+            targets: 1,
             levels: {
-                level_2: { },
-                level_3: { }
-            }
+                level_2: { bonus: { type: "mana", value: -1 }},
+                level_3: { bonus: { type: "heal", value: 1 }}
+            },
+            evolutions: ["healing-prayer", "healing-orison"]
         },
         {
             name: "focus-shot",
@@ -684,12 +702,12 @@ export const state = () => ({
             type: "attack",
             bonus: 3,
             mana: 2,
-            damage: 4,
+            damage: 3,
             damage_type: "pierce",
             range: 5,
             targets: 1,
             levels: {
-                level_2: { bonus: { type: "statistic", value: 2 }},
+                level_2: { bonus: { type: "bonus", value: 2 }},
                 level_3: { bonus: { type: "damage", value: 2 }}
             },
             evolutions: ["double-shot", "power-shot"]
@@ -704,7 +722,7 @@ export const state = () => ({
             range: 1,
             targets: 1,
             levels: {
-                level_2: { bonus: { type: "mana", value: -1 }},
+                level_2: { bonus: { type: "damage", value: 1 }},
                 level_3: { bonus: { type: "targets", value: 1 }}
             },
             evolutions: ["bleed-cut", "sonic-cut"]
@@ -821,7 +839,7 @@ export const state = () => ({
             type: "heal",
             heal: 1,
             mana: 2,
-            range: 1,
+            range: 2,
             targets: 1,
             levels: {
                 level_2: { bonus: { type: "heal", value: 1 }},
@@ -880,6 +898,44 @@ export const state = () => ({
                 level_3: { bonus: { type: "description", value: "Si el ataque acierta, empujas al enemigo 1 casilla hacia atrás." }}
             },
             evolutions: ["counterattack", "block"]
+        },
+        {
+            name: "double-attack",
+            statistic: "dexterity",
+            type: "attack",
+            damage: 2,
+            damage_type: "cut",
+            mana: 2,
+            range: 1,
+            targets: 2,
+            levels: {
+                level_2: { bonus: { type: "mana", value: 1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
+            },
+            evolutions: []
+        },
+        {
+            name: "smoke-screen",
+            statistic: "magic",
+            type: "action",
+            range: 1,
+            mana: 2,
+            levels: {
+                level_2: { bonus: { type: "range", value: 1 }},
+                level_3: { bonus: { type: "type", value: "free-action" }}
+            },
+            evolutions: []
+        },
+        {
+            name: "vanish",
+            statistic: "magic",
+            type: "action",
+            mana: 2,
+            bonus: 2,
+            levels: {
+                level_2: { bonus: { type: "bonus", value: "1" }},
+                level_3: { bonus: { type: "description", value: "Puedes realizar acciones que no sean ataques sin perder el estado invisible."}}
+            }
         }
     ]
 })

@@ -186,18 +186,41 @@ export default {
                             let bonusType = skillLevel.bonus.type
                             let bonusValue = skillLevel.bonus.value
                             switch (bonusType) {
-                                case "description":
+                                /*case "description":
                                     this.skill.description += bonusValue
-                                    break;
+                                    break*/
                                 case "statistic":
                                     //this.skill[skillLevel.bonus.type] = skillLevel.bonus.value
-                                    break;
+                                    break
                                 case "type":
                                     this.skill.type = bonusValue
-                                    break;
-                                default:
-                                    this.skill[bonusType] += bonusValue
                                     break
+                                default:
+                                    this.skill[bonusType] += parseInt(bonusValue)
+                                    break
+                            }
+                            switch (bonusType) {
+                                case "range": 
+                                    this.skill.extraDescription += '<p>Rango aumentado.</p>'
+                                    break
+                                case "damage":
+                                    this.skill.extraDescription += '<p>Daño aumentado.</p>'
+                                    break
+                                case "heal":
+                                    this.skill.extraDescription += '<p>Curación aumentada.</p>'
+                                    break
+                                case "mana":
+                                    this.skill.extraDescription += '<p>Consumo de maná reducido.</p>'
+                                    break
+                                case "shield":
+                                    this.skill.extraDescription += '<p>Escudo aumentado.</p>'
+                                    break
+                                case "targets":
+                                    this.skill.extraDescription += '<p>Objetivos aumentados.</p>'
+                                    break
+                                case "description":
+                                    this.skill.extraDescription += '<p>' + bonusValue + '</p>'
+                                    break;
                             }
                         }
                     }
@@ -268,10 +291,11 @@ export default {
                 skillReplaceStart = description.indexOf('[SKILL_')
             }
 
-            this.skill.description = description
+            this.skill.description = description + this.skill.extraDescription
         },
         setSkill () {
             this.skill = JSON.parse(JSON.stringify(this.getSkill(this.slug)))
+            this.skill.extraDescription = ''
             this.applyLevels()
             this.setDescription()
         }
@@ -425,6 +449,27 @@ export default {
         justify-content: flex-start;
         padding: 15px 20px;
 
+        //display: none;
+
+        &:nth-child(4),
+        &:nth-child(3) {
+            display: flex;
+        }
+
+        /*&:nth-child(3) {
+            //filter: grayscale(1);
+            background-color: #fff !important;
+            color: #000;
+            border: 1px solid #000;
+    
+            ::v-deep {
+                .text-outline {
+                    text-shadow: none;
+                }
+            }
+        }*/
+
+
         .element {
             min-height: unset;
             min-width: unset;
@@ -557,9 +602,10 @@ export default {
 
     #shield,
     #heal {
-        display: none;
+        //display: none;
     }
-
+    #shield,
+    #heal,
     #damage_type {
         flex-basis: 100%;
 

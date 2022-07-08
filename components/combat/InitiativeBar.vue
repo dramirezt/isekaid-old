@@ -216,6 +216,7 @@ export default {
         },
         updateInitiatives (initiatives) {
             this.initiativeOrder = this.sortInitiative(initiatives)
+            this.$emit('updateOrder', this.initiativeOrder)
             this.currentIndex = 0
             this.$nextTick(() => {
                 this.setupInitiatives()

@@ -83,7 +83,8 @@
                 v-for="(skill, index) in filteredSkills"
                 :key="'skill-' + index"
                 :slug="skill.name"
-                :level="1"
+                :level="skill.level"
+                :clickable="true"
                 @level-down="levelSkill($event, -1)"
                 @level-up="levelSkill($event, 1)"
             />
@@ -91,9 +92,18 @@
                 v-for="(skill, index) in filteredSkills"
                 :key="'skill2-' + index"
                 :slug="skill.name"
+                :level="1"
+                @level-down="levelSkill($event, -1)"
+                @level-up="levelSkill($event, 1)"
+            />
+            <Skill
+                v-for="(skill, index) in filteredSkills"
+                :key="'skill2-' + index"
+                :slug="skill.name"
                 :level="2"
                 @level-down="levelSkill($event, -1)"
                 @level-up="levelSkill($event, 1)"
+                v-show="skill.name == 'draw-attention'"
             />
             <Skill
                 v-for="(skill, index) in filteredSkills"
@@ -102,6 +112,7 @@
                 :level="3"
                 @level-down="levelSkill($event, -1)"
                 @level-up="levelSkill($event, 1)"
+                v-show="skill.name == 'draw-attention'"
             />-->
         </div>
     </div>    
@@ -219,8 +230,8 @@ export default {
     .skill {
         margin: 0 10px 10px;
         
-        &:nth-child(10n) {
-            //page-break-before: always;
+        &:nth-last-child(1),&:nth-last-child(2),&:nth-last-child(3) {
+            margin-bottom: 0;
         }
     }
 }

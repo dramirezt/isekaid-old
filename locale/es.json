@@ -165,12 +165,12 @@
             "description": "<p>Cuando vaya a ser derrotada por primera vez, la Reina Araña del Bosque desaparece durante 2 turnos a las copas de los árboles.</p><p>Al volver, la Reina Araña del Bosque habrá consumido a toda su prole y recuperado la mitad de sus PV y PM pero perderá la habilidad <b>[SKILL_CALL-BROOD]</b>.</p>"
         },
         "melee-attack-blunt": {
-            "name": "Ataque",
-            "description": "<p>Realizas un ataque cuerpo a cuerpo de daño contundente.</p>"
+            "name": "Ataque contundente",
+            "description": "<p>Realizas un ataque cuerpo a cuerpo con tu arma.</p>"
         },
         "melee-attack-cut": {
-            "name": "Ataque",
-            "description": "<p>Realizas un ataque cuerpo a cuerpo de daño cortante.</p>"
+            "name": "Ataque cortante",
+            "description": "<p>Realizas un ataque cuerpo a cuerpo con tu arma.</p>"
         },
         "ranged-attack-pierce": {
             "name": "Disparo",
@@ -184,9 +184,13 @@
             "name": "Devoción",
             "description": "<p>Permite manipular la energía sagrada que fluye por el mundo.</p><p>Desbloquea las habilidades:</p> [SKILLS]"
         },
+        "divine-intervention": {
+            "name": "Intervención divina",
+            "description": "<p>Durante un enfrentamiento puedes hacer que una tirada con resultado de pifia sea repetida.</p><p>Aplicable una vez por cada enfrentamiento y aliado.</p>"
+        },
         "draw-attention":  {
             "name": "Llamar la Atención",
-            "description": "<p>Tu presencia te convierte en el centro de atención.</p>"
+            "description": "<p>Tu presencia te convierte en el centro de atención, obligando a los objetivos de esta habilidad a moverse hacia ti en su próximo turno.</p>"
         },
         "elemental-projectile-air": {
             "name": "Proyectil Elemental: Aire",
@@ -212,6 +216,10 @@
             "name": "Corte Rápido",
             "description": "<p>Después de este ataque puedes moverte hasta 2 casillas sin provocar un ataque de oportunidad.</p>"
         },
+        "first-aid": {
+            "name": "Primeros auxilios",
+            "description": "<p>Restauras puntos de vida ocupándote de las heridas más graves.</p>"
+        },
         "healing-touch": {
             "name": "Toque Curativo",
             "description": "<p>Entonas una breve oración que restaura puntos de vida.</p>"
@@ -222,7 +230,7 @@
         },
         "focus-shot": {
             "name": "Disparo Concentrado",
-            "description": "<p>Apuntas durante un turno para realizar un disparo letal en el siguiente turno.</p>"
+            "description": "<p>Apuntas durante un turno para realizar un disparo a un punto débil del objetivo en el siguiente turno con una bonificación de [BONUS] a tu tirada.</p>"
         },
         "elemental-affinity": {
             "name": "Afinidad Elemental",
@@ -236,9 +244,13 @@
             "name": "Robustez",
             "description": "<p>Tus habilidades físicas aumentan considerablemente.</p><p>Desbloquea las habilidades:</p> [SKILLS]"
         },
+        "second-chance": {
+            "name": "Segunda oportunidad",
+            "description": "<p>Una vez al día si tus PV llegan a 0, recuperas 2PV en lugar de quedar inconsciente.</p>"
+        },
         "sense-danger": {
             "name": "Sentir Peligro",
-            "description": ""
+            "description": "<p>Te adelantas al grupo para identificar posibles amenazas en vuestro camino.</p><p>Puedes usar esta habilidad hasta 2 veces al día.</p>"
         },
         "shield-blow": {
             "name": "Golpe de Escudo",
@@ -246,7 +258,23 @@
         },
         "sixth-sense": {
             "name": "Sexto Sentido",
-            "description": "<p>Tus sentidos aumentan lo que te permite percibir tu entorno con mayor precisión.</p><p>Desbloquea las habilidades:</p> [SKILLS]"
+            "description": "<p>Tus sentidos se agudizan considerablemente, lo que te permite percibir tu entorno con mayor precisión.</p><p>Desbloquea las habilidades:</p> [SKILLS]"
+        },
+        "mana-regeneration": {
+            "name": "Regeneración de maná",
+            "description": "<p>Después de un enfrentamiento recuperas hasta un 2 puntos de maná.</p><p>Esta habilidad no te permite superar tu cantidad de maná máximo.</p>"
+        },
+        "double-attack": {
+            "name": "Ataque doble",
+            "description": "<p>Realizas dos ataques a objetivos adyacentes. Los dos ataques pueden ser al mismo objetivo.</p>"
+        },
+        "smoke-screen": {
+            "name": "Pantalla de humo",
+            "description": "<p>Lanzas una bomba de humo a una casilla que estalla inmediatamente, creando una nube de denso humo en todas las casillas adyacentes.</p><p>Cualquier otro personaje en la nube de humo verá su rango reducido en 2 (mínimo 1) y tendrá desventaja al atacar."
+        },
+        "vanish": {
+            "name": "Desaparecer",
+            "description": "<p>Te vuelves invisible durante un total de [BONUS] turnos. Cualquier acción que no sea un movimiento eliminará la invisibilidad.</p><p>Si realizas un ataque estando invisible ese ataque tendrá ventaja.</p>"
         }
     },
     "enemies": {
