@@ -99,7 +99,7 @@ export default {
                 })
             }
 
-            if (this.skill.range) {
+            if (this.skill.range !== undefined) {
                 elements.push({
                     id: 'range',
                     icon: 'skills/range.png',

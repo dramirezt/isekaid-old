@@ -675,7 +675,7 @@ export default {
                 }
             }
 
-            this.selectedSkillTargetRoll.totalRoll = parseInt(this.selectedSkillTargetRoll.roll) + parseInt(this.selectedSkillTargetRoll.roll_bonus) + parseInt(this.getStatBonus(this.selectedTarget, this.selectedSkill.skill.statistic))
+            this.selectedSkillTargetRoll.totalRoll = parseInt(this.selectedSkillTargetRoll.roll) + parseInt(this.selectedSkillTargetRoll.roll_bonus) + parseInt(this.getStatBonus(this.currentCharacter, this.selectedSkill.skill.statistic))
             
             if (this.selectedSkill.skill.type == 'attack') {
                 this.selectedSkillTargetRoll.totalDefense = this.getCharacterDefense(this.selectedTarget) + parseInt(this.selectedSkillTargetRoll.defense_bonus)
@@ -753,6 +753,27 @@ export default {
             }
 
             return result
+        }
+    },
+    watch: {
+        currentCharacter: function () {
+            this.selectedTarget = null
+            this.selectedTargetBefore = null
+            this.selectedSkillTargetRoll = { 
+                roll_bonus: 0, 
+                defense_bonus: 0,
+                type: 'normal',
+                roll: null,
+                result: null,
+                totalRoll: null,
+                totalDefense: null,
+                damageText: null,
+                damageTotal: 0,
+                damageResitance: 0
+            }
+            this.currentSkillTarget = 1
+            this.selectedSkill = null
+            this.currentStep = 'select-skill'
         }
     }
 }

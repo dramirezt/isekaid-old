@@ -172,6 +172,10 @@
             "name": "Ataque cortante",
             "description": "<p>Realizas un ataque cuerpo a cuerpo con tu arma.</p>"
         },
+        "melee-attack-pierce": {
+            "name": "Ataque perforante",
+            "description": "<p>Realizas un ataque cuerpo a cuerpo con tu arma.</p>"
+        },
         "ranged-attack-pierce": {
             "name": "Disparo",
             "description": "<p>Realizas un ataque a distancia de daño perforante.</p>"
@@ -246,11 +250,11 @@
         },
         "second-chance": {
             "name": "Segunda oportunidad",
-            "description": "<p>Una vez al día si tus PV llegan a 0, recuperas 2PV en lugar de quedar inconsciente.</p>"
+            "description": "<p>En cada enfrentamiento, la primera vez que tus PV lleguen a 0, recuperas 2PV en lugar de quedar inconsciente.</p>"
         },
         "sense-danger": {
             "name": "Sentir Peligro",
-            "description": "<p>Te adelantas al grupo para identificar posibles amenazas en vuestro camino.</p><p>Puedes usar esta habilidad hasta 2 veces al día.</p>"
+            "description": "<p>Al inicio de cada enfrentamiento puedes realizar una acción de movimiento gratuita."
         },
         "shield-blow": {
             "name": "Golpe de Escudo",
@@ -275,6 +279,118 @@
         "vanish": {
             "name": "Desaparecer",
             "description": "<p>Te vuelves invisible durante un total de [BONUS] turnos. Cualquier acción que no sea un movimiento eliminará la invisibilidad.</p><p>Si realizas un ataque estando invisible ese ataque tendrá ventaja.</p>"
+        },
+        "taunt": {
+            "name": "Provocar",
+            "description": "<p>Obligas al objetivo de esta habilidad a moverse hacia tí y elegirte como objetivo si ataca en su siguiente turno.</p>"
+        },
+        "battlecry": {
+            "name": "Grito de Batalla",
+            "description": "<p>Profieres un grito de batalla que te permite ejecutar tu siguiente ataque con ventaja.</p>"
+        },
+        "colossal-blow": {
+            "name": "Golpe Colosal",
+            "description": "<p>Realizas un ataque con tu arma con una fuerza sobrehumana.</p>"
+        },
+        "arc-blow": {
+            "name": "Golpe en Arco",
+            "description": "<p>Ejecutas un ataque horizontal contra un objetivo.</p><p>Cualquier objetivo adicional deberá estar adyacente a este y a rango de esta habilidad.</p>"
+        },
+        "defensive-stance": {
+            "name": "Posición Defensiva",
+            "description": "<p>Te colocas en una postura defensiva, lo que provoca que cualquier enemigo que te ataque sufra desventaja.</p><p>Este efecto termina en [BONUS] turnos.</p>"
+        },
+        "shield-charge": {
+            "name": "Carga con Escudo",
+            "description": "<p>Cargas en línea recta [BONUS] casillas, realizando un ataque contra cada enemigo en tu camino.</p><p>Cada ataque que impacte aturde al objetivo y lo desplaza 1 casilla lateralmente.</p>"
+        },
+        "holy-barrier": {
+            "name": "Barrera Sagrada",
+            "description": "<p>Invocas una barrera sagrada a tu alrededor con un radio de [RANGE] casillas que crea un escudo alrededor de todos los aliados dentro de ella.</p>"
+        },
+        "sacred-bonds": {
+            "name": "Cadenas Sagradas",
+            "description": "<p>Creas unas cadenas con energía sagrada que inmovilizan al objetivo durante un máximo de [BONUS] turnos.</p><p>Cualquier ataque contra el objetivo tendrá ventaja.</p>"
+        },
+        "holy-blow": {
+            "name": "Golpe Sagrado",
+            "description": "<p>Imbuyes de energía sagrada tu arma para realizar un ataque.</p><p>Si tu enemigo es un demonio o muerto viviente, este ataque tendrá ventaja.</p>"
+        },
+        "divine-lightning": {
+            "name": "Rayo Divino",
+            "description": "<p>Canalizas energía sagrada en forma un relámpago que cae sobre el objetivo.</p>"
+        },
+        "healing-prayer": {
+            "name": "Plegaria Curativa",
+            "description": "<p>Entonas una plegaria que aplica una bendición curativa al objetivo durante [BONUS] turnos.</p>"
+        },
+        "healing-orison": {
+            "name": "Oración Curativa",
+            "description": "<p>Recitas una oración que cura a múltiples objetivos en su radio de acción.</p>"
+        },
+        "double-shot": {
+            "name": "Disparo Doble",
+            "description": "<p>Realizas dos ataques a distancia. Los dos ataques pueden ser al mismo objetivo.</p>"
+        },
+        "powerful-shot": {
+            "name": "Disparo Poderoso",
+            "description": "<p>Cargas un disparo durante un turno para atacar al siguiente.</p><p>El disparo atraviesa a tu objetivo e impacta contra otro objetivo en línea recta a [BONUS] casilla/s.</p>"
+        },
+        "bleeding-cut": {
+            "name": "Corte Sangrante",
+            "description": "<p>Realizas un ataque que aplica sangrado si impacta durante [BONUS] turnos.</p><p>Después de este ataque puedes moverte hasta 2 casillas sin provocar un ataque de oportunidad.</p>"
+        },
+        "sonic-cut": {
+            "name": "Corte Sónico",
+            "description": "<p>Después de este ataque puedes moverte hasta 2 casillas sin provocar un ataque de oportunidad.</p>"
+        },
+        "fireball": {
+            "name": "Bola de Fuego",
+            "description": "<p>Creas una bola de fuego y la lanzas contra el objetivo.</p>"
+        },
+        "fire-wall": {
+            "name": "Muro de Fuego",
+            "description": "<p>Creas un muro de fuego de [BONUS] casillas adyacentes no diagonales.</p><p>Cualquier personaje en estas casillas es objetivo de un ataque.</p><p>El muro desaparece al inicio de tu próximo turno.</p>"
+        },
+        "water-surge": {
+            "name": "Oleada",
+            "description": "<p>Generas una ola que golpea [BONUS] casillas adyacentes no diagonales.</p><p>Cada objetivo impactado es empujado 1 casilla.</p>"
+        },
+        "water-cannon": {
+            "name": "Cañón de Agua",
+            "description": "<p>Disparas un torrente de agua a presión contra el objetivo.</p>"
+        },
+        "stone-wall": {
+            "name": "Muro de Piedra",
+            "description": "<p>Levantas un muro de piedra de [BONUS] casillas adyacentes no diagonales que bloquea el paso y la visión.</p><p>El muro desaparece al final de tu próximo turno.</p>"
+        },
+        "rock-thrower": {
+            "name": "Lanzarrocas",
+            "description": "<p>Lanzas una gran roca hacia un enemigo.</p><p>Este ataque impacta hasta a [BONUS] personaje adicional adyacente al objetivo.</p>"
+        },
+        "sharp-wind": {
+            "name": "Viento Afilado",
+            "description": "<p>Disparas una cuchilla de aire a presión al objetivo.</p>"
+        },
+        "wind-aura": {
+            "name": "Aura de Viento",
+            "description": "<p>Te imbuyes en un aura de viento que aumenta en 1 tu movimiento y te permite ignorar terreno difícil.</p><p>Este efecto desaparece en [BONUS] turnos.</p>"
+        },
+        "mind-control": {
+            "name": "Control Mental",
+            "description": "<p>Hechizas al objetivo para que pelee a tu lado durante sus próximos [BONUS] turnos.</p><p>Este hechizo se rompe si el objetivo queda inconsciente.</p>"
+        },
+        "raise-the-dead": {
+            "name": "Alzar a los Muertos",
+            "description": "<p>Al final de cada turno el <b>REY MALIAK</b> levanta a todos los miembros de su <b>GUARDIA DE HONOR DE MALIAK</b> que hayan caído.</p><p>Mientras el Rey Maliak esté vivo, la <b>GUARDIA DE HONOR</b> tienen dos acciones por turno.</p></p>"
+        },
+        "field-assistance": {
+            "name": "Asistencia de Campo",
+            "description": "<p>Restauras puntos de vida ocupándote de las heridas más graves y eliminando las condiciones de <b>SANGRADO</b> y <b>ENVENENADO</b>.</p>"
+        },
+        "poison-weapon": {
+            "name": "Envenenar Arma",
+            "description": "<p>Aplicas veneno a un arma a tu elección.</p><p>Si el siguiente ataque con ella el objetivo recibirá la condición <b>ENVENENADO</b>."
         }
     },
     "enemies": {
@@ -286,7 +402,26 @@
         "forest-guardian": "Guardián del Bosque",
         "forest-guardian-cub": "Cachorro del Guardián del Bosque",
         "forest-bandit": "Bandido del Bosque",
-        "forest-patches": "William 'Parches' del Bosque"
+        "forest-patches": "William 'Parches' del Bosque",
+        "goblin": "Goblin",
+        "goblin-shaman": "Chamán Goblin",
+        "goblin-champion": "Campeón Goblin",
+        "king-of-the-mountain": "Rey de la Montaña",
+        "manrat": "Hombre rata",
+        "manrat-champion": "Hombre Rata Campeón",
+        "orc": "Orco",
+        "orc-champion": "Campeón Orco",
+        "orc-warlord": "Señor de la Guerra Orco",
+        "ogre": "Ogro",
+        "ogre-champion": "Campeón Ogro",
+        "ogre-lord": "Señor Ogro",
+        "tunneling-horror": "Espanto Tunelador",
+        "tunnel-serpent": "Sierpe del Túnel",
+        "tunnel-serpent-brood": "Cría de Sierpe del Túnel",
+        "giant-centipide": "Cienpiés Gigante",
+        "king-maliak": "Rey Maliak",
+        "maliak-honor-guard": "Guardia de Honor de Maliak",
+        "skeleton": "Esqueleto"
     },
     "rolls": {
         "success": "Éxito",
