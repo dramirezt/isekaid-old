@@ -1012,6 +1012,53 @@ export const state = () => ({
                 { skill: "colossal-blow", level: 3 },
                 { skill: "raise-the-dead" }
             ]
+        },
+        {
+            name: "tunnel-salamander",
+            type: "enemy-boss",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 4 },
+                health: { base: 8, current: 20, statistic: "constitution", bonus: 4 },
+                initiative: { statistic: "dexterity", bonus: 1 },
+                mana: { base: 6, current: 16, statistic: "mana", bonus: 0 },
+                speed: { base: 4, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 2 },
+                    blunt: { statistic: "strength", bonus: 2 },
+                    poison: { statistic: "constitution", bonus: 2 },
+                    pierce: { statistic: "strength", bonus: 2 },
+                    cut: { statistic: "strength", bonus: 2 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 2 },
+                    fire: { statistic: "magic", bonus: 2 },
+                    ice: { statistic: "magic", bonus: 2 },
+                    lightning: { statistic: "magic", bonus: 2 },
+                    water: { statistic: "magic", bonus: 2 },
+                    wind: { statistic: "magic", bonus: 2 },
+                    demonic: { statistic: "faith", bonus: 2 },
+                    magical: { statistic: "magic", bonus: 2 },
+                    holy: { statistic: "faith", bonus: 2 },
+                }
+            },
+            statistics: {
+                strength: 8,
+                dexterity: 4,
+                constitution: 8,
+                magic: 4,
+                faith: 0,
+                mana: 10
+            },
+            skills: [
+                { skill: "melee-attack-blunt" },
+                { skill: "fire-wall", level: 3 },
+                { skill: "fireball", level: 3 },
+                { skill: "fear-shout", level: 3 },
+                { skill: "cleave-claw", level: 3 }
+            ]
         }
     ],
     damageTypes: {
@@ -1290,7 +1337,7 @@ export const state = () => ({
                 level_2: { bonus: { type: "range", value: 1 }},
                 level_3: { bonus: { type: "damage", value: 1 }}
             },
-            evolutions: ["fire-ball", "flare"]
+            evolutions: ["fireball", "flare"]
         },
         {
             name: "elemental-projectile-water",
