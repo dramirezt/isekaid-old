@@ -391,6 +391,22 @@
         "poison-weapon": {
             "name": "Envenenar Arma",
             "description": "<p>Aplicas veneno a un arma a tu elección.</p><p>Si el siguiente ataque con ella el objetivo recibirá la condición <b>ENVENENADO</b>."
+        },
+        "health-link": {
+            "name": "Vínculo Vital",
+            "description": "<p>Todas los personajes aliados que tengan esta habilidad distribuyen el daño entre ellos.</p>"
+        },
+        "capture": {
+            "name": "Apresar",
+            "description": "<p>Realizas una presa sobre el objetivo que no podrá moverse hasta superar una tirada de Fuerza (CD 15) en su turno.</p><p>Mientras estés realizando una presa no podrás moverte o atacar, pero el objetivo recibirá 1 de daño por turno a partir del segundo turno siendo apresado.</p>"
+        },
+        "swallow": {
+            "name": "Tragar",
+            "description": "<p>Esta habilidad se activa inmediatamente al destruir todos los <b>TENTÁCULOS DE RANA COLOSAL</b>.</p><p>La rana atrapa cualquier enemigo en combate y se lo traga. El enemigo engullido recibe 2 puntos de daño cada turno que permanece en el estómago de la rana.</p><p>La rana escupe al objetivo al usar la habilidad <b>TENTÁCULOS COLOSALES</b>.</p>"
+        },
+        "colossal-tentacles": {
+            "name": "Tentáculos colosales",
+            "description": "<p>Al inicio de combate y al 75%/50%/25% de tu vida esta habilidad se activa automáticamente invocando hasta 5 <b>TENTÁCULOS DE RANA COLOSAL</b>.</p><p>Cada tentáculo aparece a una distancia mínima de 3 casillas de un enemigo al azar.</p>"
         }
     },
     "enemies": {
@@ -422,7 +438,12 @@
         "giant-centipide": "Cienpiés Gigante",
         "king-maliak": "Rey Maliak",
         "maliak-honor-guard": "Guardia de Honor de Maliak",
-        "skeleton": "Esqueleto"
+        "skeleton": "Esqueleto",
+        "skeleton-champion": "Campeón Esqueleto",
+        "skeleton-hunter": "Cazador Esqueleto",
+        "swamp-abomination": "Abominación del Pantano",
+        "colossal-frog": "Rana Colosal",
+        "colossal-frog-tentacle": "Tentáculo de Rana Colosal"
     },
     "rolls": {
         "success": "Éxito",

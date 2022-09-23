@@ -200,6 +200,273 @@ export const state = () => ({
     ],
     enemies: [
         {
+            name: "colossal-frog",
+            type: "enemy-boss",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 0 },
+                health: { base: 16, current: 20, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 0 },
+                mana: { base: 2, current: 6, statistic: "mana", bonus: 0 },
+                speed: { base: 0, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 0 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 0 },
+                    pierce: { statistic: "strength", bonus: 0 },
+                    cut: { statistic: "strength", bonus: 0 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 0 },
+                    ice: { statistic: "magic", bonus: 0 },
+                    lightning: { statistic: "magic", bonus: 0 },
+                    water: { statistic: "magic", bonus: 0 },
+                    wind: { statistic: "magic", bonus: 0 },
+                    demonic: { statistic: "faith", bonus: 0 },
+                    magical: { statistic: "magic", bonus: 0 },
+                    holy: { statistic: "faith", bonus: 0 },
+                }
+            },
+            statistics: {
+                strength: 4,
+                dexterity: 4,
+                constitution: 4,
+                magic: 4,
+                faith: 4,
+                mana: 4
+            },
+            skills: [
+                { skill: "colossal-tentacles" },
+                { skill: "swallow" }
+            ]
+        },
+        {
+            name: "colossal-frog-tentacle",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 4, current: 6, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 0 },
+                mana: { base: 0, current: 0, statistic: "mana", bonus: 0 },
+                speed: { base: 1, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 0 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 0 },
+                    pierce: { statistic: "strength", bonus: 0 },
+                    cut: { statistic: "strength", bonus: 0 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 0 },
+                    ice: { statistic: "magic", bonus: 0 },
+                    lightning: { statistic: "magic", bonus: 0 },
+                    water: { statistic: "magic", bonus: 0 },
+                    wind: { statistic: "magic", bonus: 0 },
+                    demonic: { statistic: "faith", bonus: 0 },
+                    magical: { statistic: "magic", bonus: 0 },
+                    holy: { statistic: "faith", bonus: 0 },
+                }
+            },
+            statistics: {
+                strength: 2,
+                dexterity: 2,
+                constitution: 2,
+                magic: 0,
+                faith: 0,
+                mana: 0
+            },
+            skills: [
+                { skill: "melee-attack-blunt" },
+                { skill: "capture" }
+            ]
+        },
+        {
+            name: "skeleton-hunter",
+            type: "enemy-boss",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 4 },
+                health: { base: 6, current: 8, statistic: "constitution", bonus: 2 },
+                initiative: { statistic: "dexterity", bonus: 1 },
+                mana: { base: 6, current: 10, statistic: "mana", bonus: 0 },
+                speed: { base: 5, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 2 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 10 },
+                    pierce: { statistic: "strength", bonus: 2 },
+                    cut: { statistic: "strength", bonus: 2 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 3 },
+                    ice: { statistic: "magic", bonus: 1 },
+                    lightning: { statistic: "magic", bonus: 1 },
+                    water: { statistic: "magic", bonus: 1 },
+                    wind: { statistic: "magic", bonus: 3 },
+                    demonic: { statistic: "faith", bonus: 1 },
+                    magical: { statistic: "magic", bonus: 1 },
+                    holy: { statistic: "faith", bonus: -2 },
+                }
+            },
+            statistics: {
+                strength: 3,
+                dexterity: 2,
+                constitution: 0,
+                magic: 1,
+                faith: 0,
+                mana: 4
+            },
+            skills: [
+                { skill: "melee-attack-cut" },
+                { skill: "double-attack", level: 2 },
+                { skill: "vanish", level: 3 },
+                { skill: "health-link" }
+            ]
+        },
+        {
+            name: "skeleton-champion",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 4, current: 6, statistic: "constitution", bonus: 2 },
+                initiative: { statistic: "dexterity", bonus: 1 },
+                mana: { base: 4, current: 4, statistic: "mana", bonus: 0 },
+                speed: { base: 4, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 2 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 10 },
+                    pierce: { statistic: "strength", bonus: 2 },
+                    cut: { statistic: "strength", bonus: 2 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 3 },
+                    ice: { statistic: "magic", bonus: 1 },
+                    lightning: { statistic: "magic", bonus: 1 },
+                    water: { statistic: "magic", bonus: 1 },
+                    wind: { statistic: "magic", bonus: 1 },
+                    demonic: { statistic: "faith", bonus: 1 },
+                    magical: { statistic: "magic", bonus: 1 },
+                    holy: { statistic: "faith", bonus: -2 },
+                }
+            },
+            statistics: {
+                strength: 2,
+                dexterity: 2,
+                constitution: 0,
+                magic: 0,
+                faith: 0,
+                mana: 0
+            },
+            skills: [
+                { skill: "melee-attack-cut" },
+                { skill: "shield-blow", level: 1 }
+            ]
+        },
+        {
+            name: "skeleton",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 4, current: 4, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 1 },
+                mana: { base: 4, current: 4, statistic: "mana", bonus: 0 },
+                speed: { base: 4, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 2 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 10 },
+                    pierce: { statistic: "strength", bonus: 2 },
+                    cut: { statistic: "strength", bonus: 2 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 3 },
+                    ice: { statistic: "magic", bonus: 1 },
+                    lightning: { statistic: "magic", bonus: 1 },
+                    water: { statistic: "magic", bonus: 1 },
+                    wind: { statistic: "magic", bonus: 3 },
+                    demonic: { statistic: "faith", bonus: 1 },
+                    magical: { statistic: "magic", bonus: 1 },
+                    holy: { statistic: "faith", bonus: -2 },
+                }
+            },
+            statistics: {
+                strength: 1,
+                dexterity: 1,
+                constitution: 0,
+                magic: 0,
+                faith: 0,
+                mana: 0
+            },
+            skills: [
+                { skill: "melee-attack-cut" }
+            ]
+        },
+        {
+            name: "swamp-abomination",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 8, current: 10, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 1 },
+                mana: { base: 4, current: 6, statistic: "mana", bonus: 0 },
+                speed: { base: 4, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 2 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 2 },
+                    pierce: { statistic: "strength", bonus: 0 },
+                    cut: { statistic: "strength", bonus: 2 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 0 },
+                    ice: { statistic: "magic", bonus: 0 },
+                    lightning: { statistic: "magic", bonus: 0 },
+                    water: { statistic: "magic", bonus: 0 },
+                    wind: { statistic: "magic", bonus: 0 },
+                    demonic: { statistic: "faith", bonus: 0 },
+                    magical: { statistic: "magic", bonus: 0 },
+                    holy: { statistic: "faith", bonus: 0 },
+                }
+            },
+            statistics: {
+                strength: 3,
+                dexterity: 2,
+                constitution: 2,
+                magic: 1,
+                faith: 0,
+                mana: 2
+            },
+            skills: [
+                { skill: "melee-attack-cut" },
+                { skill: "melee-attack-blunt" },
+                { skill: "rock-thrower", level: 2 },
+                { skill: "stone-wall", level: 2 }
+            ]
+        },
+        /*{
             name: "forest-bandit",
             type: "enemy-regular",
             combat: {
@@ -605,7 +872,7 @@ export const state = () => ({
                 { skill: "battlecry", level: 1 }
             ]
         },
-        /*{
+        {
             name: "ogre",
             type: "enemy-regular",
             combat: {
@@ -648,7 +915,7 @@ export const state = () => ({
                 { skill: "melee-attack-cut" },
                 { skill: "ranged-attack-pierce" },
             ]
-        },*/
+        },
         {
             name: "goblin-champion",
             type: "enemy-regular",
@@ -742,7 +1009,7 @@ export const state = () => ({
                 { skill: "taunt", level: 2 }
             ]
         },
-        /*{
+        {
             name: "ogre-champion",
             type: "enemy-boss",
             combat: {
@@ -785,7 +1052,7 @@ export const state = () => ({
                 { skill: "melee-attack-cut" },
                 { skill: "ranged-attack-pierce" },
             ]
-        },*/
+        },
         {
             name: "manrat",
             type: "enemy-regular",
@@ -1059,13 +1326,30 @@ export const state = () => ({
                 { skill: "fear-shout", level: 3 },
                 { skill: "cleave-claw", level: 3 }
             ]
-        }
+        }*/
     ],
     damageTypes: {
         physical: ["bleed", "blunt", "cut", "pierce", "poison"],
         magical: ["earth", "fire", "ice", "lightning", "water", "wind", "demonic", "magical", "holy"]
     },
     skills: [
+        {
+            name: "health-link",
+            type: "passive"
+        },
+        {
+            name: "capture",
+            type: "action",
+            range: 3,
+        },
+        {
+            name: "colossal-tentacles",
+            type: "unique",
+        },
+        {
+            name: "swallow",
+            type: "unique",
+        },
         {
             name: "mana-regeneration",
             type: "passive",
@@ -1814,8 +2098,8 @@ export const state = () => ({
             bonus: 1,
             targets: 1,
             levels: {
-                level_2: { bonus: { type: "damage", value: 1 }},
-                level_3: { bonus: { type: "range", value: 1 }}
+                level_2: { bonus: { type: "range", value: 1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
             },
             evolutions: []
         },
