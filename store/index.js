@@ -200,6 +200,318 @@ export const state = () => ({
     ],
     enemies: [
         {
+            name: "wraith",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 4, current: 4, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 1 },
+                mana: { base: 4, current: 4, statistic: "mana", bonus: 0 },
+                speed: { base: 4, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 10 },
+                    blunt: { statistic: "strength", bonus: 2 },
+                    poison: { statistic: "constitution", bonus: 10 },
+                    pierce: { statistic: "strength", bonus: 2 },
+                    cut: { statistic: "strength", bonus: 2 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 0 },
+                    ice: { statistic: "magic", bonus: 0 },
+                    lightning: { statistic: "magic", bonus: 0 },
+                    water: { statistic: "magic", bonus: 0 },
+                    wind: { statistic: "magic", bonus: 0 },
+                    demonic: { statistic: "faith", bonus: 0 },
+                    magical: { statistic: "magic", bonus: 0 },
+                    holy: { statistic: "faith", bonus: 0 },
+                }
+            },
+            statistics: {
+                strength: 1,
+                dexterity: 1,
+                constitution: 0,
+                magic: 0,
+                faith: 0,
+                mana: 0
+            },
+            skills: [
+                { skill: "melee-attack-cut" }
+            ]
+        },
+        {
+            name: "skeleton",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 4, current: 4, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 1 },
+                mana: { base: 4, current: 4, statistic: "mana", bonus: 0 },
+                speed: { base: 4, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 10 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 10 },
+                    pierce: { statistic: "strength", bonus: 2 },
+                    cut: { statistic: "strength", bonus: 2 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 3 },
+                    ice: { statistic: "magic", bonus: 1 },
+                    lightning: { statistic: "magic", bonus: 1 },
+                    water: { statistic: "magic", bonus: 1 },
+                    wind: { statistic: "magic", bonus: 3 },
+                    demonic: { statistic: "faith", bonus: 1 },
+                    magical: { statistic: "magic", bonus: 1 },
+                    holy: { statistic: "faith", bonus: -2 },
+                }
+            },
+            statistics: {
+                strength: 1,
+                dexterity: 1,
+                constitution: 0,
+                magic: 0,
+                faith: 0,
+                mana: 0
+            },
+            skills: [
+                { skill: "melee-attack-cut" }
+            ]
+        },
+        {
+            name: "hellhound",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 6, current: 8, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 0 },
+                mana: { base: 4, current: 6, statistic: "mana", bonus: 0 },
+                speed: { base: 6, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 0 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 0 },
+                    pierce: { statistic: "strength", bonus: 0 },
+                    cut: { statistic: "strength", bonus: 0 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 0 },
+                    ice: { statistic: "magic", bonus: 0 },
+                    lightning: { statistic: "magic", bonus: 0 },
+                    water: { statistic: "magic", bonus: 0 },
+                    wind: { statistic: "magic", bonus: 0 },
+                    demonic: { statistic: "faith", bonus: 0 },
+                    magical: { statistic: "magic", bonus: 0 },
+                    holy: { statistic: "faith", bonus: 0 },
+                }
+            },
+            statistics: {
+                strength: 2,
+                dexterity: 2,
+                constitution: 2,
+                magic: 1,
+                faith: 0,
+                mana: 2
+            },
+            skills: [
+                { skill: "melee-attack-cut" },
+                { skill: "cleave-claw", level: 3 },
+                { skill: "overwhelming-charge", level: 2 },
+                { skill: "fireball", level: 1 }
+            ]
+        },
+        {
+            name: "lesser-demon",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 4, current: 6, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 0 },
+                mana: { base: 4, current: 6, statistic: "mana", bonus: 0 },
+                speed: { base: 0, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 1 },
+                    blunt: { statistic: "strength", bonus: 1 },
+                    poison: { statistic: "constitution", bonus: 1 },
+                    pierce: { statistic: "strength", bonus: 1 },
+                    cut: { statistic: "strength", bonus: 1 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 1 },
+                    fire: { statistic: "magic", bonus: 1 },
+                    ice: { statistic: "magic", bonus: 1 },
+                    lightning: { statistic: "magic", bonus: 1 },
+                    water: { statistic: "magic", bonus: 1 },
+                    wind: { statistic: "magic", bonus: 1 },
+                    demonic: { statistic: "faith", bonus: 10 },
+                    magical: { statistic: "magic", bonus: 1 },
+                    holy: { statistic: "faith", bonus: 0 },
+                }
+            },
+            statistics: {
+                strength: 1,
+                dexterity: 1,
+                constitution: 0,
+                magic: 1,
+                faith: 0,
+                mana: 2
+            },
+            skills: [
+                { skill: "melee-attack-blunt" },
+                { skill: "elemental-projectile-fire", level: 2 }
+            ]
+        },
+        {
+            name: "demon-warrior",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 4, current: 6, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 0 },
+                mana: { base: 4, current: 6, statistic: "mana", bonus: 0 },
+                speed: { base: 0, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 0 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 0 },
+                    pierce: { statistic: "strength", bonus: 0 },
+                    cut: { statistic: "strength", bonus: 0 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 1 },
+                    fire: { statistic: "magic", bonus: 1 },
+                    ice: { statistic: "magic", bonus: 1 },
+                    lightning: { statistic: "magic", bonus: 1 },
+                    water: { statistic: "magic", bonus: 1 },
+                    wind: { statistic: "magic", bonus: 1 },
+                    demonic: { statistic: "faith", bonus: 10 },
+                    magical: { statistic: "magic", bonus: 1 },
+                    holy: { statistic: "faith", bonus: 1 },
+                }
+            },
+            statistics: {
+                strength: 3,
+                dexterity: 3,
+                constitution: 2,
+                magic: 1,
+                faith: 0,
+                mana: 2
+            },
+            skills: [
+                { skill: "melee-attack-cut" },
+                { skill: "defensive-stance", level: 3 },
+                { skill: "arc-blow", level: 2 },
+                { skill: "taunt", level: 2 }
+            ]
+        },
+        {
+            name: "demon-wizard",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 2 },
+                health: { base: 4, current: 6, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 0 },
+                mana: { base: 4, current: 10, statistic: "mana", bonus: 2 },
+                speed: { base: 0, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 0 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 0 },
+                    pierce: { statistic: "strength", bonus: 0 },
+                    cut: { statistic: "strength", bonus: 0 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 1 },
+                    fire: { statistic: "magic", bonus: 1 },
+                    ice: { statistic: "magic", bonus: 1 },
+                    lightning: { statistic: "magic", bonus: 1 },
+                    water: { statistic: "magic", bonus: 1 },
+                    wind: { statistic: "magic", bonus: 1 },
+                    demonic: { statistic: "faith", bonus: 10 },
+                    magical: { statistic: "magic", bonus: 1 },
+                    holy: { statistic: "faith", bonus: 1 },
+                }
+            },
+            statistics: {
+                strength: 1,
+                dexterity: 2,
+                constitution: 1,
+                magic: 3,
+                faith: 0,
+                mana: 4
+            },
+            skills: [
+                { skill: "ranged-attack-magical" },
+                { skill: "fire-wall", level: 3 },
+                { skill: "life-steal", level: 2 }
+            ]
+        },
+        {
+            name: "greater-demon",
+            type: "enemy-boss",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 4 },
+                health: { base: 8, current: 10, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 0 },
+                mana: { base: 4, current: 7, statistic: "mana", bonus: 0 },
+                speed: { base: 0, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 0 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 0 },
+                    pierce: { statistic: "strength", bonus: 0 },
+                    cut: { statistic: "strength", bonus: 0 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 0 },
+                    ice: { statistic: "magic", bonus: 0 },
+                    lightning: { statistic: "magic", bonus: 0 },
+                    water: { statistic: "magic", bonus: 0 },
+                    wind: { statistic: "magic", bonus: 0 },
+                    demonic: { statistic: "faith", bonus: 10 },
+                    magical: { statistic: "magic", bonus: 0 },
+                    holy: { statistic: "faith", bonus: 0 },
+                }
+            },
+            statistics: {
+                strength: 2,
+                dexterity: 2,
+                constitution: 2,
+                magic: 2,
+                faith: 0,
+                mana: 3
+            },
+            skills: [
+                { skill: "double-attack", level: 2 },
+                { skill: "arc-blow", level: 3 },
+                { skill: "fireball", level: 1 }
+            ]
+        },
+        /*{
             name: "colossal-frog",
             type: "enemy-boss",
             combat: {
@@ -466,7 +778,7 @@ export const state = () => ({
                 { skill: "stone-wall", level: 2 }
             ]
         },
-        /*{
+        {
             name: "forest-bandit",
             type: "enemy-regular",
             combat: {
@@ -1702,7 +2014,7 @@ export const state = () => ({
             name: "draw-attention",
             statistic: "constitution",
             type: "action",
-            mana: 2,
+            mana: 1,
             range: 4,
             targets: 1,
             levels: {
@@ -1715,9 +2027,9 @@ export const state = () => ({
             name: "powerful-blow",
             statistic: "strength",
             type: "attack",
-            damage: 3,
+            damage: 2,
             damage_type: "cut",
-            mana: 3,
+            mana: 2,
             range: 1,
             targets: 1,
             levels: {
@@ -1739,7 +2051,7 @@ export const state = () => ({
                 level_2: { bonus: { type: "damage", value: 1 }},
                 level_3: { bonus: { type: "description", value: "Si el ataque acierta, empujas al enemigo 1 casilla hacia atrás." }}
             },
-            evolutions: ["counterattack", "block"]
+            evolutions: ["shield-charge", "defensive-stance"]
         },
         {
             name: "double-attack",
@@ -1751,7 +2063,7 @@ export const state = () => ({
             range: 1,
             targets: 2,
             levels: {
-                level_2: { bonus: { type: "mana", value: 1 }},
+                level_2: { bonus: { type: "mana", value: -1 }},
                 level_3: { bonus: { type: "damage", value: 1 }}
             },
             evolutions: []
@@ -1951,7 +2263,7 @@ export const state = () => ({
             },
             evolutions: []
         },
-        {
+        /*{
             name: "double-shot",
             statistic: "dexterity",
             type: "attack",
@@ -1981,7 +2293,7 @@ export const state = () => ({
                 level_3: { bonus: { type: "damage", value: 2 }}
             },
             evolutions: []
-        },
+        },*/
         {
             name: "bleeding-cut",
             statistic: "dexterity",
@@ -2170,6 +2482,148 @@ export const state = () => ({
             levels: {
                 level_2: { bonus: { type: "bonus", value: 1 }},
                 level_3: { bonus: { type: "range", value: 2 }}
+            },
+            evolutions: []
+        },
+        {
+            name: "moving-shot",
+            statistic: "dexterity",
+            type: "attack",
+            mana: 1,
+            damage: 0,
+            damage_type: "pierce",
+            range: 3,
+            targets: 1,
+            bonus: 1,
+            levels: {
+                level_2: { bonus: { type: "bonus", value: 1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
+            },
+            evolutions: ["acrobatic-shot", "reactive-shot"]
+        },
+        {
+            name: "acrobatic-shot",
+            statistic: "dexterity",
+            type: "attack",
+            mana: 1,
+            damage: 0,
+            damage_type: "pierce",
+            range: 3,
+            targets: 1,
+            bonus: 3,
+            levels: {
+                level_2: { bonus: { type: "bonus", value: 1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
+            },
+            evolutions: ["bleed-cut", "sonic-cut"]
+        },
+        {
+            name: "defensive-shot",
+            statistic: "dexterity",
+            type: "action",
+            mana: 1,
+            damage: 0,
+            damage_type: "pierce",
+            range: 6,
+            targets: 1,
+            bonus: 1,
+            levels: {
+                level_2: { bonus: { type: "damage", value: 1 }},
+                level_3: { bonus: { type: "type", value: "free-action" }}
+            },
+            evolutions: ["bleed-cut", "sonic-cut"]
+        },
+        {
+            name: "aimed-shot",
+            statistic: "dexterity",
+            type: "attack",
+            mana: 2,
+            damage: 2,
+            damage_type: "pierce",
+            range: 5,
+            targets: 1,
+            levels: {
+                level_2: { bonus: { type: "range", value: 1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
+            },
+            evolutions: ["double-shot", "powerful-shot"]
+        },
+        {
+            name: "double-shot",
+            statistic: "dexterity",
+            type: "attack",
+            damage: 2,
+            damage_type: "pierce",
+            mana: 3,
+            range: 4,
+            targets: 2,
+            levels: {
+                level_2: { bonus: { type: "mana", value: -1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
+            },
+            evolutions: []
+        },
+        {
+            name: "powerful-shot",
+            statistic: "dexterity",
+            type: "attack",
+            bonus: 1,
+            mana: 2,
+            damage: 3,
+            damage_type: "pierce",
+            range: 4,
+            targets: 1,
+            levels: {
+                level_2: { bonus: { type: "bonus", value: 1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
+            },
+            evolutions: []
+        },
+        {
+            name: "pinning-shot",
+            statistic: "dexterity",
+            type: "attack",
+            mana: 2,
+            damage: 1,
+            damage_type: "pierce",
+            range: 4,
+            targets: 1,
+            bonus: 2,
+            levels: {
+                level_2: { bonus: { type: "bonus", value: 1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
+            },
+            evolutions: ["inmobilizing-shot", "crippling-shot"]
+        },
+        {
+            name: "immobilizing-shot",
+            statistic: "dexterity",
+            type: "attack",
+            mana: 2,
+            damage: 1,
+            damage_type: "pierce",
+            range: 4,
+            targets: 1,
+            bonus: 1,
+            levels: {
+                level_2: { bonus: { type: "bonus", value: 1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
+            },
+            evolutions: []
+        },
+        {
+            name: "crippling-shot",
+            statistic: "dexterity",
+            type: "attack",
+            mana: 2,
+            damage: 1,
+            damage_type: "pierce",
+            range: 4,
+            targets: 1,
+            bonus: 2,
+            levels: {
+                level_2: { bonus: { type: "bonus", value: 1 }},
+                level_3: { bonus: { type: "damage", value: 1 }}
             },
             evolutions: []
         }

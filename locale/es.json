@@ -194,7 +194,7 @@
         },
         "draw-attention":  {
             "name": "Llamar la Atención",
-            "description": "<p>Tu presencia te convierte en el centro de atención, obligando a los objetivos de esta habilidad a moverse hacia ti en su próximo turno.</p>"
+            "description": "<p>Tu presencia te convierte en el centro de atención, obligando a los objetivos de esta habilidad a moverse hacia ti en su próximo turno.</p><p>El movimiento del objetivo puede provocar ataques de oportunidad.</p>"
         },
         "elemental-projectile-air": {
             "name": "Proyectil Elemental: Aire",
@@ -218,7 +218,7 @@
         },
         "fast-cut": {
             "name": "Corte Rápido",
-            "description": "<p>Después de este ataque puedes moverte hasta 2 casillas sin provocar un ataque de oportunidad.</p>"
+            "description": "<p>Después de este ataque puedes moverte hasta [RANGE] casillas sin provocar un ataque de oportunidad.</p>"
         },
         "first-aid": {
             "name": "Primeros auxilios",
@@ -282,7 +282,7 @@
         },
         "taunt": {
             "name": "Provocar",
-            "description": "<p>Obligas al objetivo de esta habilidad a moverse hacia tí y elegirte como objetivo si ataca en su siguiente turno.</p>"
+            "description": "<p>Obligas al objetivo de esta habilidad a moverse hacia tí y elegirte como objetivo si ataca en su siguiente turno.</p><p>El movimiento del objetivo puede provocar ataques de oportunidad.</p>"
         },
         "battlecry": {
             "name": "Grito de Batalla",
@@ -407,6 +407,34 @@
         "colossal-tentacles": {
             "name": "Tentáculos colosales",
             "description": "<p>Al inicio de combate y al 75%/50%/25% de tu vida esta habilidad se activa automáticamente invocando hasta 5 <b>TENTÁCULOS DE RANA COLOSAL</b>.</p><p>Cada tentáculo aparece a una distancia mínima de 3 casillas de un enemigo al azar.</p>"
+        },
+        "moving-shot": {
+            "name": "Disparo en movimiento",
+            "description": "<p>Puedes moverte hasta [BONUS] casilla(s) sin provocar un ataque de oportunidad.</p><p>En cualquier momento durante este movimiento puedes realizar un ataque.</p>"
+        },
+        "acrobatic-shot": {
+            "name": "Disparo acrobático",
+            "description": "<p>Colócate en cualquier casilla libre en un radio de [BONUS] casillas, después puedes realizar un ataque.</p><p>Esta acción no provoca ataques de oportunidad y permite atravesar enemigos.</p>"
+        },
+        "defensive-shot": {
+            "name": "Disparo defensivo",
+            "description": "<p>Puedes realizar un ataque contra el próximo enemigo que te ataque. El ataque enemigo será con <b>DESVENTAJA</b>.</p><p> Este efecto desaparece al final de tu próximo turno.</p>"
+        },
+        "aimed-shot": {
+            "name": "Disparo apuntado",
+            "description": "<p>Inviertes unos instantes para realizar un disparo apuntado a un punto blando del enemigo.</p><p>No puedes moverte después de realizar este ataque.</p>"
+        },
+        "pinning-shot": {
+            "name": "Tiro de anclaje",
+            "description": "<p>Disparas a las piernas del objetivo, que tendrá que superar una tirada de Constitución (CD 15) o ver su movimiento reducido en [BONUS] casillas (hasta un mínimo de 0)."
+        },
+        "immobilizing-shot": {
+            "name": "Disparo inmovilizador",
+            "description": "<p>Disparas a las piernas del objetivo, que tendrá que superar una tirada de Constitución (CD 15) o quedar <b>INMOVILIZADO</b> durante [BONUS] turno(s)."
+        },
+        "crippling-shot": {
+            "name": "Disparo cercenador",
+            "description": "<p>Disparas a las piernas del objetivo, que tendrá que superar una tirada de Constitución (CD 15) o ver su movimiento reducido en [BONUS]."
         }
     },
     "enemies": {
@@ -443,7 +471,14 @@
         "skeleton-hunter": "Cazador Esqueleto",
         "swamp-abomination": "Abominación del Pantano",
         "colossal-frog": "Rana Colosal",
-        "colossal-frog-tentacle": "Tentáculo de Rana Colosal"
+        "colossal-frog-tentacle": "Tentáculo de Rana Colosal",
+        "hellhound": "Sabueso infernal",
+        "wraith": "Espectro",
+        "lesser-demon": "Demonio menor",
+        "demon-warrior": "Demonio guerrero",
+        "demon-wizard": "Demonio Hechicero",
+        "greater-demon": "Demonio mayor",
+        "lordan-guardian": "Guardian de Lordan"
     },
     "rolls": {
         "success": "Éxito",
