@@ -2336,7 +2336,7 @@ export const state = () => ({
             targets: 1,
             levels: {
                 level_2: { bonus: { type: "damage", value: 1 }},
-                level_3: { bonus: { type: "damage", value: 2 }}
+                level_3: { bonus: { type: "damage", value: 1 }}
             },
             evolutions: []
         },
