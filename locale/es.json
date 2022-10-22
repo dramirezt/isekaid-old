@@ -434,7 +434,7 @@
         },
         "crippling-shot": {
             "name": "Disparo cercenador",
-            "description": "<p>Disparas a las piernas del objetivo, que tendrá que superar una tirada de Constitución (CD 15) o ver su movimiento reducido en [BONUS]."
+            "description": "<p>Disparo que entorpece la capacidad de combate del objetivo. Sufrirá <b>DESVENTAJA</b> al atacar y al defender.</p><p>Este efecto desaparece después de aplicarse [BONUS] veces.</p>"
         }
     },
     "enemies": {
