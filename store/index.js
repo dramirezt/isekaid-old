@@ -199,7 +199,7 @@ export const state = () => ({
 
     ],
     enemies: [
-        {
+        /*{
             name: "wraith",
             type: "enemy-regular",
             combat: {
@@ -374,7 +374,7 @@ export const state = () => ({
                 { skill: "melee-attack-blunt" },
                 { skill: "elemental-projectile-fire", level: 2 }
             ]
-        },
+        },*/
         {
             name: "demon-warrior",
             type: "enemy-regular",
@@ -509,6 +509,140 @@ export const state = () => ({
                 { skill: "double-attack", level: 2 },
                 { skill: "arc-blow", level: 3 },
                 { skill: "fireball", level: 1 }
+            ]
+        },
+        {
+            name: "tower-guardian",
+            type: "enemy-boss",
+            combat: {
+                defense: { statistic: "strength", bonus: 2 },
+                health: { base: 12, current: 16, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 0 },
+                mana: { base: 4, current: 8, statistic: "mana", bonus: 0 },
+                speed: { base: 3, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 10 },
+                    blunt: { statistic: "strength", bonus: 2 },
+                    poison: { statistic: "constitution", bonus: 10 },
+                    pierce: { statistic: "strength", bonus: 2 },
+                    cut: { statistic: "strength", bonus: 2 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 2 },
+                    fire: { statistic: "magic", bonus: 3 },
+                    ice: { statistic: "magic", bonus: 1 },
+                    lightning: { statistic: "magic", bonus: 3 },
+                    water: { statistic: "magic", bonus: 1 },
+                    wind: { statistic: "magic", bonus: 1 },
+                    demonic: { statistic: "faith", bonus: 2 },
+                    magical: { statistic: "magic", bonus: 2 },
+                    holy: { statistic: "faith", bonus: 2 },
+                }
+            },
+            statistics: {
+                strength: 3,
+                dexterity: 0,
+                constitution: 4,
+                magic: 0,
+                faith: 0,
+                mana: 4
+            },
+            skills: [
+                { skill: "melee-attack-blunt" },
+                { skill: "arc-blow", level: 3 },
+                { skill: "colossal-blow", level: 2 },
+            ]
+        },
+        {
+            name: "goblin-shaman",
+            type: "enemy-regular",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 4 },
+                health: { base: 4, current: 6, statistic: "constitution", bonus: 1 },
+                initiative: { statistic: "dexterity", bonus: 1 },
+                mana: { base: 4, current: 6, statistic: "mana", bonus: 0 },
+                speed: { base: 5, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 0 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 10 },
+                    pierce: { statistic: "strength", bonus: 0 },
+                    cut: { statistic: "strength", bonus: 0 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: -1 },
+                    ice: { statistic: "magic", bonus: 0 },
+                    lightning: { statistic: "magic", bonus: 0 },
+                    water: { statistic: "magic", bonus: 0 },
+                    wind: { statistic: "magic", bonus: 0 },
+                    demonic: { statistic: "faith", bonus: 0 },
+                    magical: { statistic: "magic", bonus: 0 },
+                    holy: { statistic: "faith", bonus: 0 },
+                }
+            },
+            statistics: {
+                strength: 0,
+                dexterity: 1,
+                constitution: 1,
+                magic: 3,
+                faith: 1,
+                mana: 2
+            },
+            skills: [
+                { skill: "melee-attack-cut" },
+                { skill: "fireball", level: 1 },
+                { skill: "healing-touch", level: 3 }
+            ]
+        },
+        {
+            name: "colossal-frog-tower",
+            type: "enemy-boss",
+            combat: {
+                defense: { statistic: "dexterity", bonus: 0 },
+                health: { base: 16, current: 20, statistic: "constitution", bonus: 0 },
+                initiative: { statistic: "dexterity", bonus: 0 },
+                mana: { base: 2, current: 6, statistic: "mana", bonus: 0 },
+                speed: { base: 0, bonus: 0 },
+                shield: 0
+            },
+            resistances: {
+                physical: {
+                    bleed: { statistic: "constitution", bonus: 0 },
+                    blunt: { statistic: "strength", bonus: 0 },
+                    poison: { statistic: "constitution", bonus: 0 },
+                    pierce: { statistic: "strength", bonus: 0 },
+                    cut: { statistic: "strength", bonus: 0 }
+                },
+                magical: {
+                    earth: { statistic: "magic", bonus: 0 },
+                    fire: { statistic: "magic", bonus: 0 },
+                    ice: { statistic: "magic", bonus: 0 },
+                    lightning: { statistic: "magic", bonus: 0 },
+                    water: { statistic: "magic", bonus: 0 },
+                    wind: { statistic: "magic", bonus: 0 },
+                    demonic: { statistic: "faith", bonus: 0 },
+                    magical: { statistic: "magic", bonus: 0 },
+                    holy: { statistic: "faith", bonus: 0 },
+                }
+            },
+            statistics: {
+                strength: 4,
+                dexterity: 4,
+                constitution: 4,
+                magic: 4,
+                faith: 4,
+                mana: 4
+            },
+            skills: [
+                { skill: "jump" },
+                { skill: "swallow" }
             ]
         },
         /*{
@@ -1138,7 +1272,7 @@ export const state = () => ({
                 { skill: "ranged-attack-pierce" },
                 { skill: "fast-cut", level: 1 }
             ]
-        },
+        },*/
         {
             name: "orc",
             type: "enemy-regular",
@@ -1183,7 +1317,7 @@ export const state = () => ({
                 { skill: "melee-attack-blunt" },
                 { skill: "battlecry", level: 1 }
             ]
-        },
+        },/*
         {
             name: "ogre",
             type: "enemy-regular",
@@ -1273,7 +1407,7 @@ export const state = () => ({
                 { skill: "double-shot", level: 3 },
                 { skill: "bleeding-cut", level: 2 }
             ]
-        },
+        },*/  
         {
             name: "orc-champion",
             type: "enemy-regular",
@@ -1320,7 +1454,7 @@ export const state = () => ({
                 { skill: "colossal-blow", level: 3 },
                 { skill: "taunt", level: 2 }
             ]
-        },
+        },/*
         {
             name: "ogre-champion",
             type: "enemy-boss",
