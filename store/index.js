@@ -602,15 +602,15 @@ export const state = () => ({
             ]
         },
         {
-            name: "colossal-frog-tower",
+            name: "final-boss",
             type: "enemy-boss",
             combat: {
                 defense: { statistic: "dexterity", bonus: 0 },
-                health: { base: 16, current: 20, statistic: "constitution", bonus: 0 },
+                health: { base: 8, current: 10, statistic: "constitution", bonus: 0 },
                 initiative: { statistic: "dexterity", bonus: 0 },
-                mana: { base: 2, current: 6, statistic: "mana", bonus: 0 },
-                speed: { base: 0, bonus: 0 },
-                shield: 0
+                mana: { base: 8, current: 12, statistic: "mana", bonus: 0 },
+                speed: { base: 4, bonus: 0 },
+                shield: 10
             },
             resistances: {
                 physical: {
@@ -633,16 +633,22 @@ export const state = () => ({
                 }
             },
             statistics: {
-                strength: 4,
-                dexterity: 4,
-                constitution: 4,
-                magic: 4,
-                faith: 4,
+                strength: 1,
+                dexterity: 2,
+                constitution: 2,
+                magic: 3,
+                faith: 3,
                 mana: 4
             },
             skills: [
-                { skill: "jump" },
-                { skill: "swallow" }
+                { skill: "ranged-attack-magical" },
+                { skill: "divine-lightning", level: 3 },
+                { skill: "holy-shield", level: 3 },
+                { skill: "fire-wall", level: 2 },
+                { skill: "water-cannon", level: 3 },
+                { skill: "rock-thrower", level: 3 },
+                { skill: "sharp-wind", level: 3 },
+                { skill: "dark-mirror" }
             ]
         },
         /*{
@@ -1780,6 +1786,10 @@ export const state = () => ({
     },
     skills: [
         {
+            name: "dark-mirror",
+            type: "unique"
+        },
+        {
             name: "health-link",
             type: "passive"
         },
@@ -2513,10 +2523,9 @@ export const state = () => ({
             damage_type: "water",
             range: 4,
             targets: 1,
-            bonus: 1,
             levels: {
                 level_2: { bonus: { type: "damage", value: 1 }},
-                level_3: { bonus: { type: "bonus", value: 1 }}
+                level_3: { bonus: { type: "range", value: 1 }}
             },
             evolutions: []
         },

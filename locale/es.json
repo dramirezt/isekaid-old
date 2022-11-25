@@ -435,6 +435,10 @@
         "crippling-shot": {
             "name": "Disparo cercenador",
             "description": "<p>Disparo que entorpece la capacidad de combate del objetivo. Sufrirá <b>DESVENTAJA</b> al atacar y al defender.</p><p>Este efecto desaparece después de aplicarse [BONUS] veces.</p>"
+        },
+        "dark-mirror": {
+            "name": "Espejo Oscuro",
+            "description": "<p>Envías a los objetivos a una dimension paralela donde deben enfrentarse a un reflejo de sí mismos. No podrán volver al combate hasta haber derrotado a sus dopplegangers malignos.</p>"
         }
     },
     "enemies": {
@@ -478,7 +482,9 @@
         "demon-warrior": "Demonio guerrero",
         "demon-wizard": "Demonio Hechicero",
         "greater-demon": "Demonio mayor",
-        "lordan-guardian": "Guardian de Lordan"
+        "lordan-guardian": "Guardian de Lordan",
+        "final-boss": "Jefe final",
+        "tower-guardian": "Guardián de la Torre"
     },
     "rolls": {
         "success": "Éxito",
